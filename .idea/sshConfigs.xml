@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="172.16.10.222" id="19b2427e-7502-4fa8-9415-2ee0b8ad0aa0" port="22" nameFormat="DESCRIPTIVE" username="ferrumcapital" />
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="172.16.10.221" id="a7c42f57-1dbe-4510-8505-6510047f7e0b" port="22" customName="ferrum2" nameFormat="CUSTOM" username="ferrum">
+        <option name="customName" value="ferrum2" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

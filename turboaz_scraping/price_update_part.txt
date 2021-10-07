@@ -1,0 +1,20 @@
+# current price and currency of car in our table for now
+current_price = self.current_car_price(car_id)[0]
+
+if car['price'] == current_price:
+    continue
+else:
+    self.exists_count += 1  # increment count if car is already exists but price changed
+    updated_price = self.get_price_in_updated_car_table(car_id)
+    if updated_price:
+        updated_price = updated_price[0]
+        if updated_price != car['price']:
+            self.insert_into_updated_car(car_id, car['price'], car['date'])
+            self.mark_car_as_updated_and_unfiltered(car_id)
+            continue
+        else:
+            continue
+    else:
+        self.insert_into_updated_car(car_id, car['price'], car['date'])
+        self.mark_car_as_updated_and_unfiltered(car_id)
+        continue

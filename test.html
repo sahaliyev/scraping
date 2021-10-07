@@ -1,0 +1,644 @@
+
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8"/>
+      <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+      <link href="/min/g=mcss" rel="stylesheet" type="text/css"/>
+      <title>AUTO.AZ Mobile</title>
+      <script src="/js/ga.js"></script>
+      <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+      <script src="/min/g=mjs?v=337"></script>
+   </head>
+   <body>
+      <!--LiveInternet counter--><script type="text/javascript"><!--
+         new Image().src = "//counter.yadro.ru/hit;autoaz?r"+
+         escape(document.referrer)+((typeof(screen)=="undefined")?"":
+         ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+         screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+         ";"+Math.random();//-->
+      </script><!--/LiveInternet-->
+      <div id="global">
+         <div id="header">
+            <a class="pjax" href="/">
+               <div id="logo"></div>
+            </a>
+            <div id="lang">
+               <a class="lang" href="/ru/" style="margin-left:10px;">
+                  <div class="ru"><span>Русский</span></div>
+               </a>
+               <a class="lang" href="/az/">
+                  <div class="az"><span>Azərbaycanca</span></div>
+               </a>
+            </div>
+         </div>
+         <div id="content">
+            <!-- banner block -->
+            <!-- search form block -->
+            <div class="block search">
+               <div class="title">Avtomobil Axtarışı</div>
+               <div class="form" id="short_form">
+                  <!--brand-->
+                  <div class="item item100">
+                     <select class="modern-select" id="search_brand" onchange="mobile_search_get_models(this.value,'hər hansı model')">
+                        <option value="0">hər hansı marka</option>
+                        <option value="7|Audi">Audi</option>
+                        <option value="157|BAIC">BAIC</option>
+                        <option value="10|BMW">BMW</option>
+                        <option value="14|BYD">BYD</option>
+                        <option value="15|Cadillac">Cadillac</option>
+                        <option value="149|Changan">Changan</option>
+                        <option value="18|Chery">Chery</option>
+                        <option value="19|Chevrolet">Chevrolet</option>
+                        <option value="23|Dacia">Dacia</option>
+                        <option value="25|Daewoo">Daewoo</option>
+                        <option value="29|Dodge">Dodge</option>
+                        <option value="36|Fiat">Fiat</option>
+                        <option value="37|Ford">Ford</option>
+                        <option value="117|GAZ">GAZ</option>
+                        <option value="41|Great_Wall">Great Wall</option>
+                        <option value="43|Honda">Honda</option>
+                        <option value="46|Hyundai">Hyundai</option>
+                        <option value="47|Infiniti">Infiniti</option>
+                        <option value="156|Iran_Khodro">Iran Khodro</option>
+                        <option value="52|Jeep">Jeep</option>
+                        <option value="53|Kia">Kia</option>
+                        <option value="115|Lada_(VAZ)">Lada (VAZ)</option>
+                        <option value="57|Land_Rover">Land Rover</option>
+                        <option value="59|Lexus">Lexus</option>
+                        <option value="60|Lifan">Lifan</option>
+                        <option value="67|Mazda">Mazda</option>
+                        <option value="68|Mercedes">Mercedes</option>
+                        <option value="132|MG">MG</option>
+                        <option value="73|Mini">Mini</option>
+                        <option value="74|Mitsubishi">Mitsubishi</option>
+                        <option value="77|Nissan">Nissan</option>
+                        <option value="79|Opel">Opel</option>
+                        <option value="81|Peugeot">Peugeot</option>
+                        <option value="84|Porsche">Porsche</option>
+                        <option value="179|Ravon">Ravon</option>
+                        <option value="87|Renault">Renault</option>
+                        <option value="91|Saipa">Saipa</option>
+                        <option value="96|Skoda">Skoda</option>
+                        <option value="97|Smart">Smart</option>
+                        <option value="100|Subaru">Subaru</option>
+                        <option value="104|Tofas">Tofas</option>
+                        <option value="105|Toyota">Toyota</option>
+                        <option value="109|Volkswagen">Volkswagen</option>
+                        <option value="118|ZAZ">ZAZ</option>
+                     </select>
+                  </div>
+                  <!--model-->
+                  <div class="item item100">
+                     <select class="modern-select" id="search_model">
+                        <option value="0">hər hansı model</option>
+                     </select>
+                  </div>
+                  <!--year-->
+                  <div>
+                     <div class="item item45">
+                        <select class="modern-select" id="search_year_from">
+                           <option value="0">ildən</option>
+                           <option value="2021">2021</option>
+                           <option value="2020">2020</option>
+                           <option value="2019">2019</option>
+                           <option value="2018">2018</option>
+                           <option value="2017">2017</option>
+                           <option value="2016">2016</option>
+                           <option value="2015">2015</option>
+                           <option value="2014">2014</option>
+                           <option value="2013">2013</option>
+                           <option value="2012">2012</option>
+                           <option value="2011">2011</option>
+                           <option value="2010">2010</option>
+                           <option value="2009">2009</option>
+                           <option value="2008">2008</option>
+                           <option value="2007">2007</option>
+                           <option value="2006">2006</option>
+                           <option value="2005">2005</option>
+                           <option value="2004">2004</option>
+                           <option value="2003">2003</option>
+                           <option value="2002">2002</option>
+                           <option value="2001">2001</option>
+                           <option value="2000">2000</option>
+                           <option value="1999">1999</option>
+                           <option value="1998">1998</option>
+                           <option value="1997">1997</option>
+                           <option value="1996">1996</option>
+                           <option value="1995">1995</option>
+                           <option value="1994">1994</option>
+                           <option value="1993">1993</option>
+                           <option value="1992">1992</option>
+                           <option value="1991">1991</option>
+                           <option value="1990">1990</option>
+                           <option value="1989">1989</option>
+                           <option value="1988">1988</option>
+                           <option value="1987">1987</option>
+                           <option value="1986">1986</option>
+                           <option value="1985">1985</option>
+                           <option value="1984">1984</option>
+                           <option value="1983">1983</option>
+                           <option value="1982">1982</option>
+                           <option value="1981">1981</option>
+                           <option value="1980">1980</option>
+                           <option value="1979">1979</option>
+                           <option value="1978">1978</option>
+                           <option value="1977">1977</option>
+                           <option value="1976">1976</option>
+                           <option value="1975">1975</option>
+                           <option value="1974">1974</option>
+                           <option value="1973">1973</option>
+                           <option value="1972">1972</option>
+                           <option value="1971">1971</option>
+                           <option value="1970">1970</option>
+                           <option value="1969">1969</option>
+                           <option value="1968">1968</option>
+                           <option value="1967">1967</option>
+                           <option value="1966">1966</option>
+                           <option value="1965">1965</option>
+                           <option value="1964">1964</option>
+                           <option value="1963">1963</option>
+                           <option value="1962">1962</option>
+                           <option value="1961">1961</option>
+                           <option value="1960">1960</option>
+                           <option value="1959">1959</option>
+                           <option value="1958">1958</option>
+                           <option value="1957">1957</option>
+                           <option value="1956">1956</option>
+                           <option value="1955">1955</option>
+                           <option value="1954">1954</option>
+                           <option value="1953">1953</option>
+                           <option value="1952">1952</option>
+                           <option value="1951">1951</option>
+                           <option value="1950">1950</option>
+                        </select>
+                     </div>
+                     <div class="item item10">—</div>
+                     <div class="item item45">
+                        <select class="modern-select" id="search_year_till">
+                           <option value="0">ilədək</option>
+                           <option value="2021">2021</option>
+                           <option value="2020">2020</option>
+                           <option value="2019">2019</option>
+                           <option value="2018">2018</option>
+                           <option value="2017">2017</option>
+                           <option value="2016">2016</option>
+                           <option value="2015">2015</option>
+                           <option value="2014">2014</option>
+                           <option value="2013">2013</option>
+                           <option value="2012">2012</option>
+                           <option value="2011">2011</option>
+                           <option value="2010">2010</option>
+                           <option value="2009">2009</option>
+                           <option value="2008">2008</option>
+                           <option value="2007">2007</option>
+                           <option value="2006">2006</option>
+                           <option value="2005">2005</option>
+                           <option value="2004">2004</option>
+                           <option value="2003">2003</option>
+                           <option value="2002">2002</option>
+                           <option value="2001">2001</option>
+                           <option value="2000">2000</option>
+                           <option value="1999">1999</option>
+                           <option value="1998">1998</option>
+                           <option value="1997">1997</option>
+                           <option value="1996">1996</option>
+                           <option value="1995">1995</option>
+                           <option value="1994">1994</option>
+                           <option value="1993">1993</option>
+                           <option value="1992">1992</option>
+                           <option value="1991">1991</option>
+                           <option value="1990">1990</option>
+                           <option value="1989">1989</option>
+                           <option value="1988">1988</option>
+                           <option value="1987">1987</option>
+                           <option value="1986">1986</option>
+                           <option value="1985">1985</option>
+                           <option value="1984">1984</option>
+                           <option value="1983">1983</option>
+                           <option value="1982">1982</option>
+                           <option value="1981">1981</option>
+                           <option value="1980">1980</option>
+                           <option value="1979">1979</option>
+                           <option value="1978">1978</option>
+                           <option value="1977">1977</option>
+                           <option value="1976">1976</option>
+                           <option value="1975">1975</option>
+                           <option value="1974">1974</option>
+                           <option value="1973">1973</option>
+                           <option value="1972">1972</option>
+                           <option value="1971">1971</option>
+                           <option value="1970">1970</option>
+                           <option value="1969">1969</option>
+                           <option value="1968">1968</option>
+                           <option value="1967">1967</option>
+                           <option value="1966">1966</option>
+                           <option value="1965">1965</option>
+                           <option value="1964">1964</option>
+                           <option value="1963">1963</option>
+                           <option value="1962">1962</option>
+                           <option value="1961">1961</option>
+                           <option value="1960">1960</option>
+                           <option value="1959">1959</option>
+                           <option value="1958">1958</option>
+                           <option value="1957">1957</option>
+                           <option value="1956">1956</option>
+                           <option value="1955">1955</option>
+                           <option value="1954">1954</option>
+                           <option value="1953">1953</option>
+                           <option value="1952">1952</option>
+                           <option value="1951">1951</option>
+                           <option value="1950">1950</option>
+                        </select>
+                     </div>
+                  </div>
+                  <!--price-->
+                  <div>
+                     <div class="item item45">
+                        <select class="modern-select" id="search_price_from">
+                           <option value="0">qiymətdən</option>
+                           <option value="2500">$2 500</option>
+                           <option value="3500">$3 500</option>
+                           <option value="5000">$5 000</option>
+                           <option value="8000">$8 000</option>
+                           <option value="11000">$11 000</option>
+                           <option value="15000">$15 000</option>
+                           <option value="25000">$25 000</option>
+                           <option value="40000">$40 000</option>
+                           <option value="60000">$60 000</option>
+                           <option value="100000">$100 000</option>
+                        </select>
+                     </div>
+                     <div class="item item10">—</div>
+                     <div class="item item45">
+                        <select class="modern-select" id="search_price_till">
+                           <option value="0">qiymətədək</option>
+                           <option value="2500">$2 500</option>
+                           <option value="3500">$3 500</option>
+                           <option value="5000">$5 000</option>
+                           <option value="8000">$8 000</option>
+                           <option value="11000">$11 000</option>
+                           <option value="15000">$15 000</option>
+                           <option value="25000">$25 000</option>
+                           <option value="40000">$40 000</option>
+                           <option value="60000">$60 000</option>
+                           <option value="100000">$100 000</option>
+                           <option value="0"> $100 000 -dən yuxarı</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+               <div class="form" id="full_form" style="display:none;">
+                  <!--region-->
+                  <div>
+                     <div class="item item100">
+                        <select class="modern-select" id="search_region">
+                           <option value="">region</option>
+                           <option value="Abşeron">Abşeron</option>
+                           <option value="Ağdam">Ağdam</option>
+                           <option value="Ağdaş">Ağdaş</option>
+                           <option value="Ağstafa">Ağstafa</option>
+                           <option value="Ağsu">Ağsu</option>
+                           <option value="Astara">Astara</option>
+                           <option value="Bakı">Bakı</option>
+                           <option value="Balakən">Balakən</option>
+                           <option value="Beyləqan">Beyləqan</option>
+                           <option value="Biləsuvar">Biləsuvar</option>
+                           <option value="Bərdə">Bərdə</option>
+                           <option value="Culfa">Culfa</option>
+                           <option value="Cəlilabad">Cəlilabad</option>
+                           <option value="Daşkəsən">Daşkəsən</option>
+                           <option value="Goranboy">Goranboy</option>
+                           <option value="Göyçay">Göyçay</option>
+                           <option value="Gəncə">Gəncə</option>
+                           <option value="Hacıqabul">Hacıqabul</option>
+                           <option value="İmişli">İmişli</option>
+                           <option value="Kürdəmir">Kürdəmir</option>
+                           <option value="Lerik">Lerik</option>
+                           <option value="Lənkəran">Lənkəran</option>
+                           <option value="Masallı">Masallı</option>
+                           <option value="Mingəçevir">Mingəçevir</option>
+                           <option value="Naxçıvan">Naxçıvan</option>
+                           <option value="Oğuz">Oğuz</option>
+                           <option value="Qax">Qax</option>
+                           <option value="Qazax">Qazax</option>
+                           <option value="Qobustan">Qobustan</option>
+                           <option value="Quba">Quba</option>
+                           <option value="Qusar">Qusar</option>
+                           <option value="Qəbələ">Qəbələ</option>
+                           <option value="Saatlı">Saatlı</option>
+                           <option value="Sabirabad">Sabirabad</option>
+                           <option value="Şabran">Şabran</option>
+                           <option value="Şamaxı">Şamaxı</option>
+                           <option value="Samux">Samux</option>
+                           <option value="Şirvan">Şirvan</option>
+                           <option value="Siyəzən">Siyəzən</option>
+                           <option value="Sumqayıt">Sumqayıt</option>
+                           <option value="Şəki">Şəki</option>
+                           <option value="Səlyan">Səlyan</option>
+                           <option value="Şəmkir">Şəmkir</option>
+                           <option value="Şərur">Şərur</option>
+                           <option value="Tovuz">Tovuz</option>
+                           <option value="Ucar">Ucar</option>
+                           <option value="Xaçmaz">Xaçmaz</option>
+                           <option value="Xırdalan">Xırdalan</option>
+                           <option value="Xızı">Xızı</option>
+                           <option value="Yardımlı">Yardımlı</option>
+                           <option value="Yevlax">Yevlax</option>
+                           <option value="Zaqatala">Zaqatala</option>
+                           <option value="Zərdab">Zərdab</option>
+                        </select>
+                     </div>
+                  </div>
+                  <!--body-->
+                  <div>
+                     <div class="item item100">
+                        <select class="modern-select" id="search_body">
+                           <option value="">ban tipi</option>
+                           <option value="1">sedan</option>
+                           <option value="2">ofrouder</option>
+                           <option value="3">xetçbek</option>
+                           <option value="4">kupe</option>
+                           <option value="5">kabriolet/rodster</option>
+                           <option value="6">furqon</option>
+                           <option value="7">pikap</option>
+                           <option value="8">limuzin</option>
+                           <option value="9">miniven/mikroavtobus</option>
+                           <option value="10">avtobus</option>
+                           <option value="11">yük maşını</option>
+                           <option value="12">xüsusi texnika</option>
+                           <option value="13">qoşulan/avtoev</option>
+                           <option value="14">mototexnika</option>
+                           <option value="16">krossover</option>
+                           <option value="17">universal</option>
+                        </select>
+                     </div>
+                  </div>
+                  <!--kpp-->
+                  <div>
+                     <div class="item item100">
+                        <select class="modern-select" id="search_kpp">
+                           <option value="">sürət qutusu</option>
+                           <option value="a">avtomatik</option>
+                           <option value="m">mexaniki</option>
+                        </select>
+                     </div>
+                  </div>
+                  <!--mileage-->
+                  <div>
+                     <div class="item item45">
+                        <select class="modern-select" id="search_mileage_from">
+                           <option value="0">yürüş -dən</option>
+                           <option value="1000">1 000 km</option>
+                           <option value="5000">5 000 km</option>
+                           <option value="10000">10 000 km</option>
+                           <option value="25000">25 000 km</option>
+                           <option value="50000">50 000 km</option>
+                           <option value="75000">75 000 km</option>
+                           <option value="100000">100 000 km</option>
+                           <option value="150000">150 000 km</option>
+                        </select>
+                     </div>
+                     <div class="item item10">—</div>
+                     <div class="item item45">
+                        <select class="modern-select" id="search_mileage_till">
+                           <option value="0">yürüş -dək</option>
+                           <option value="1000">1 000 km</option>
+                           <option value="5000">5 000 km</option>
+                           <option value="10000">10 000 km</option>
+                           <option value="25000">25 000 km</option>
+                           <option value="50000">50 000 km</option>
+                           <option value="75000">75 000 km</option>
+                           <option value="100000">100 000 km</option>
+                           <option value="150000">150 000 km</option>
+                           <option value="0"> 150 000 km -dən yuxarı</option>
+                        </select>
+                     </div>
+                  </div>
+                  <!--engine-->
+                  <div>
+                     <div class="item item45">
+                        <select class="modern-select" id="search_engine_from">
+                           <option value="0">mühərrik -dən</option>
+                           <option value="250">250 sm³</option>
+                           <option value="500">500 sm³</option>
+                           <option value="1000">1 000 sm³</option>
+                           <option value="1500">1 500 sm³</option>
+                           <option value="2000">2 000 sm³</option>
+                           <option value="2500">2 500 sm³</option>
+                           <option value="3000">3 000 sm³</option>
+                           <option value="5000">5 000 sm³</option>
+                           <option value="6000">6 000 sm³</option>
+                           <option value="8000">8 000 sm³</option>
+                        </select>
+                     </div>
+                     <div class="item item10">—</div>
+                     <div class="item item45">
+                        <select class="modern-select" id="search_engine_till">
+                           <option value="0">mühərrik -dək</option>
+                           <option value="250">250 sm³</option>
+                           <option value="500">500 sm³</option>
+                           <option value="1000">1 000 sm³</option>
+                           <option value="1500">1 500 sm³</option>
+                           <option value="2000">2 000 sm³</option>
+                           <option value="2500">2 500 sm³</option>
+                           <option value="3000">3 000 sm³</option>
+                           <option value="5000">5 000 sm³</option>
+                           <option value="6000">6 000 sm³</option>
+                           <option value="8000">8 000 sm³</option>
+                           <option value="0"> 8 000 sm³ -dən yuxarı</option>
+                        </select>
+                     </div>
+                  </div>
+                  <!--fuel-->
+                  <div>
+                     <div class="item item100">
+                        <select class="modern-select" id="search_fuel">
+                           <option value="">yanacaq növü</option>
+                           <option value="1">benzin</option>
+                           <option value="2">dizel</option>
+                           <option value="3">qaz</option>
+                           <option value="4">elektromobil</option>
+                           <option value="5">hibrid</option>
+                        </select>
+                     </div>
+                  </div>
+                  <!--condition-->
+                  <div>
+                     <div class="item item100">
+                        <select class="modern-select" id="search_condition">
+                           <option value="">vəziyyəti</option>
+                           <option value="1">əla</option>
+                           <option value="2">yaxşı</option>
+                           <option value="3">orta</option>
+                           <option value="4">vurulmuş</option>
+                           <option value="5">hissələrə</option>
+                        </select>
+                     </div>
+                  </div>
+                  <!--color-->
+                  <div>
+                     <div class="item item100">
+                        <select class="modern-select" id="search_color">
+                           <option value="">rəngi</option>
+                           <option value="2">ağ</option>
+                           <option value="1">bej</option>
+                           <option value="14">boz</option>
+                           <option value="18">bənövşəyi</option>
+                           <option value="12">çəhrayı</option>
+                           <option value="15">göy</option>
+                           <option value="13">gümüşü</option>
+                           <option value="4">mavi</option>
+                           <option value="11">narıncı</option>
+                           <option value="20">qara</option>
+                           <option value="16">qarışıq</option>
+                           <option value="9">qırmızı</option>
+                           <option value="7">qızılı</option>
+                           <option value="8">qəhvəyi</option>
+                           <option value="5">sarı</option>
+                           <option value="3">tünd qırmızı</option>
+                           <option value="19">xamelyon</option>
+                           <option value="10">yaş asfalt</option>
+                           <option value="6">yaşıl</option>
+                        </select>
+                     </div>
+                  </div>
+                  <!--gear-->
+                  <div>
+                     <div class="item item100">
+                        <select class="modern-select" id="search_gear">
+                           <option value="">ötürücü</option>
+                           <option value="p">ön</option>
+                           <option value="z">arxa</option>
+                           <option value="4">tam</option>
+                        </select>
+                     </div>
+                  </div>
+                  <!--credit-->
+                  <div>
+                     <div class="item item100">
+                        <select class="modern-select" id="search_credit">
+                           <option value="0">kredit?</option>
+                           <option value="1">bəli</option>
+                           <option value="2">xeyr</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+               <div class="noselect" id="show_full_form"><span class="full">əlavə parametrləri göstərmək</span><span class="short" style="display:none;">əlavə parametrləri gizlətmək</span></div>
+               <!--button-->
+               <div class="modern-button" id="search_button">AXTAR</div>
+               <a class="noselect pjax allcars" href="/cars/"><span class="link">BÜTÜN YENİ ELANLARA BAXIN</span></a>
+            </div>
+            <!-- banner block -->
+            <!-- brands list block -->
+            <div class="block brand">
+               <div class="title">Markalar üzrə Axtarış</div>
+               <div class="brend_c" style="padding:0;overflow:hidden;">
+                  <div id="full_brands_short">
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Audi/"><span class="link">Audi (15)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/BMW/"><span class="link">BMW
+                        (120)</span></a></span>
+                     </div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Chevrolet/"><span class="link">Chevrolet (105)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Daewoo/"><span class="link">Daewoo (40)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Fiat/"><span class="link">Fiat (11)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Ford/"><span class="link">Ford (84)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/GAZ/"><span class="link">GAZ (26)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Honda/"><span class="link">Honda (12)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Hyundai/"><span class="link">Hyundai (242)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Iran_Khodro/"><span class="link">Iran Khodro (14)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Jeep/"><span class="link">Jeep (20)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Kia/"><span class="link">Kia (133)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Lada_(VAZ)/"><span class="link">Lada (VAZ) (345)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Land_Rover/"><span class="link">Land Rover (12)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Lexus/"><span class="link">Lexus (25)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Mercedes/"><span class="link">Mercedes (522)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Mitsubishi/"><span class="link">Mitsubishi (43)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Nissan/"><span class="link">Nissan (70)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Opel/"><span class="link">Opel (210)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Renault/"><span class="link">Renault (29)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Tofas/"><span class="link">Tofas (10)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Toyota/"><span class="link">Toyota (132)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Volkswagen/"><span class="link">Volkswagen (75)</span></a></span></div>
+                     <div style="float:right;"><span class="item"><a class="red" href="#" id="brands_link1"><span class="link">Bütün markalar</span></a></span></div>
+                  </div>
+                  <div id="full_brands_full" style="display:none;">
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Alfa_Romeo/"><span class="link">Alfa Romeo (1)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Audi/"><span class="link">Audi (15)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/BAIC/"><span class="link">BAIC (2)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/BMW/"><span class="link">BMW
+                        (120)</span></a></span>
+                     </div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/BYD/"><span class="link">BYD (3)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Cadillac/"><span class="link">Cadillac (3)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Changan/"><span class="link">Changan (5)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Chery/"><span class="link">Chery (7)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Chevrolet/"><span class="link">Chevrolet (105)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Chrysler/"><span class="link">Chrysler (2)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Citroen/"><span class="link">Citroen (2)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Dacia/"><span class="link">Dacia (2)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Daewoo/"><span class="link">Daewoo (40)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Dodge/"><span class="link">Dodge (3)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Fiat/"><span class="link">Fiat (11)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Ford/"><span class="link">Ford (84)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/GAZ/"><span class="link">GAZ (26)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Geely/"><span class="link">Geely (1)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Great_Wall/"><span class="link">Great Wall (5)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Haojue/"><span class="link">Haojue (1)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Honda/"><span class="link">Honda (12)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Hummer/"><span class="link">Hummer (2)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Hyundai/"><span class="link">Hyundai (242)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Infiniti/"><span class="link">Infiniti (6)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Iran_Khodro/"><span class="link">Iran Khodro (14)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Iveco/"><span class="link">Iveco (1)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Jeep/"><span class="link">Jeep (20)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Khazar/"><span class="link">Khazar (4)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Kia/"><span class="link">Kia (133)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Lada_(VAZ)/"><span class="link">Lada (VAZ) (345)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Land_Rover/"><span class="link">Land Rover (12)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Lexus/"><span class="link">Lexus (25)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Lifan/"><span class="link">Lifan (5)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Maserati/"><span class="link">Maserati (1)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Mazda/"><span class="link">Mazda (7)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Mercedes/"><span class="link">Mercedes (522)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/MG/"><span class="link">MG (2)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Mini/"><span class="link">Mini (1)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Mitsubishi/"><span class="link">Mitsubishi (43)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Moskvich/"><span class="link">Moskvich (2)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Nissan/"><span class="link">Nissan (70)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Opel/"><span class="link">Opel (210)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Peugeot/"><span class="link">Peugeot (8)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Porsche/"><span class="link">Porsche (4)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Ravon/"><span class="link">Ravon (2)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Renault/"><span class="link">Renault (29)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Saipa/"><span class="link">Saipa (5)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Scion/"><span class="link">Scion (1)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/SEAT/"><span class="link">SEAT (7)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Skoda/"><span class="link">Skoda (2)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Smart/"><span class="link">Smart (2)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/SsangYong/"><span class="link">SsangYong (1)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Subaru/"><span class="link">Subaru (4)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Suzuki/"><span class="link">Suzuki (2)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Tofas/"><span class="link">Tofas (10)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Toyota/"><span class="link">Toyota (132)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/UAZ/"><span class="link">UAZ (3)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Volkswagen/"><span class="link">Volkswagen (75)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/Yamaha/"><span class="link">Yamaha (1)</span></a></span></div>
+                     <div><span class="item"><a class="pjax" href="/cars/brand/ZAZ/"><span class="link">ZAZ (5)</span></a></span></div>
+                     <div style="float:right"><span class="item"><a class="red" href="#" id="brands_link2"><span class="link">Bağlamaq</span></a></span></div>
+                  </div>
+               </div>
+            </div>
+            <!-- banner block -->
+            <center>
+               <a href="https://www.virtualkarabakh.az/az.html" target="_blank"><img src="http://www.auto.az/uploads/banners/qaze3.jpg" style="width:320px;height:146px;border:0;" title="Qarabağ Azərbaycandır!"/></a>
+            </center>
+         </div>
+      </div>
+      <div id="footer"><a href="http://www.auto.az/full/"><span>saytın tam versiyasına keçmək</span></a></div>
+      <div id="loader"></div>
+   </body>
+</html>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c633e525-b115-4aa7-b413-4a65410b392f" name="ferrum1">
+        <fileTransfer accessType="SFTP" host="172.16.10.222" port="22" sshConfigId="19b2427e-7502-4fa8-9415-2ee0b8ad0aa0" sshConfig="ferrumcapital@172.16.10.222:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="59aca372-b174-4513-a202-bca33f5d1a63" name="ferrum2">
+        <fileTransfer accessType="SFTP" host="172.16.10.221" port="22" sshConfigId="a7c42f57-1dbe-4510-8505-6510047f7e0b" sshConfig="ferrum2">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

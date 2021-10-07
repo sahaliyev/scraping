@@ -1,0 +1,71 @@
+DELETE FROM unique_details;
+ALTER SEQUENCE unique_details_id_seq RESTART WITH 1;
+
+DELETE FROM details;
+ALTER SEQUENCE details_id_seq RESTART WITH 1;
+
+DELETE FROM unique_phone_number;
+ALTER SEQUENCE unique_phone_number_id_seq RESTART WITH 1;
+
+DELETE FROM phone_number;
+ALTER SEQUENCE phone_number_id_seq RESTART WITH 1;
+
+DELETE FROM transmission;
+ALTER SEQUENCE transmission_id_seq RESTART WITH 1;
+
+DELETE FROM seller;
+ALTER SEQUENCE seller_id_seq RESTART WITH 1;
+
+DELETE FROM requirements_keywords;
+ALTER SEQUENCE requirements_keywords_id_seq RESTART WITH 1;
+
+DELETE FROM requirements_gearbox;
+ALTER SEQUENCE requirements_gearbox_id_seq RESTART WITH 1;
+
+DELETE FROM requirements_fuel_type;
+ALTER SEQUENCE requirements_fuel_type_id_seq RESTART WITH 1;
+
+DELETE FROM requirements_details;
+ALTER SEQUENCE requirements_details_id_seq RESTART WITH 1;
+
+DELETE FROM requirements_ban_type;
+ALTER SEQUENCE requirements_ban_type_id_seq RESTART WITH 1;
+
+DELETE FROM requirements;
+ALTER SEQUENCE requirements_id_seq RESTART WITH 1;
+
+DELETE FROM model;
+ALTER SEQUENCE model_id_seq RESTART WITH 1;
+
+DELETE FROM marka;
+ALTER SEQUENCE marka_id_seq RESTART WITH 1;
+
+DELETE FROM logs;
+ALTER SEQUENCE logs_id_seq RESTART WITH 1;
+
+DELETE FROM keywords;
+ALTER SEQUENCE keywords_id_seq RESTART WITH 1;
+
+DELETE FROM images;
+ALTER SEQUENCE images_id_seq RESTART WITH 1;
+
+DELETE FROM gearbox;
+ALTER SEQUENCE gearbox_id_seq RESTART WITH 1;
+
+DELETE FROM fuel_type;
+ALTER SEQUENCE fuel_type_id_seq RESTART WITH 1;
+
+DELETE FROM currency;
+ALTER SEQUENCE currency_id_seq RESTART WITH 1;
+
+DELETE FROM color;
+ALTER SEQUENCE color_id_seq RESTART WITH 1;
+
+DELETE FROM city;
+ALTER SEQUENCE city_id_seq RESTART WITH 1;
+
+DELETE FROM ban_type;
+ALTER SEQUENCE ban_type_id_seq RESTART WITH 1;
+
+DELETE FROM car;
+ALTER SEQUENCE car_id_seq RESTART WITH 1;

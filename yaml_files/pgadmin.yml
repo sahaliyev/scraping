@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@localhost
+      PGADMIN_DEFAULT_PASSWORD: Fe2Rum@)@)
+      PGADMIN_LISTEN_PORT: 57893
+    volumes:
+      - data:/var/lib/pgadmin
+    ports:
+      - "8001:57893"
+
+volumes:
+  data:
+    driver: local

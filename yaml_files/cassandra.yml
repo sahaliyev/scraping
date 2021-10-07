@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  cassandra1:
+    container_name: cassandra1
+    image: cassandra:latest
+    volumes:
+      - node1:/var/lib/cassandra/data
+    ports:
+      - 9042:9042
+    environment:
+      - CASSANDRA_START_RPC=true
+      - CASSANDRA_CLUSTER_NAME=MyCluster
+      - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
+      - CASSANDRA_DC=datacenter1
+  cassandra2:
+    container_name: cassandra2
+    image: cassandra:latest
+    volumes:
+      - node2:/var/lib/cassandra/data
+    ports:
+      - 9043:9042
+    command: bash -c 'sleep 60;  /docker-entrypoint.sh cassandra -f'
+    depends_on:
+      - cassandra1
+    environment:
+      - CASSANDRA_START_RPC=true
+      - CASSANDRA_CLUSTER_NAME=MyCluster
+      - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
+      - CASSANDRA_DC=datacenter1
+      - CASSANDRA_SEEDS=cassandra1
+
+volumes:
+  node1:
+    driver: local
+  node2:
+    driver: local
