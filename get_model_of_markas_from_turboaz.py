@@ -12,7 +12,7 @@ from datetime import datetime
 from sys import platform
 
 
-class AllMarkaModel(DBQueries):
+class AllMarkaModel(DBQueries): # inherit
     def __init__(self):
         super(AllMarkaModel, self).__init__()
         self.marka_count = 0
